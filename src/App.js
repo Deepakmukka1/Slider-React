@@ -13,21 +13,25 @@ const App=()=> {
  },
  {
   Name:'Hemanth Rathode',
-  Role:'',
+  Role:'Tester',
   Image:'https://images.pexels.com/photos/736716/pexels-photo-736716.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500',
-  Message:''
+  Message:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scramble"
 
 
 },
 {
   Name:'Sammera Khan',
-  Image:'https://res.cloudinary.com/diqqf3eq2/image/upload/v1586883334/person-1_rfzshl.jpg'
+  Role:'Devops-Engineer',
+  Image:'https://res.cloudinary.com/diqqf3eq2/image/upload/v1586883409/person-2_np9x5l.jpg',
+  Message:"It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters"
 
 
 },
 {
   Name:'Pablo Stanley',
-  Image:'https://st4.depositphotos.com/1001992/21109/i/600/depositphotos_211096346-stock-photo-confident-man-white-shirt-posing.jpg'
+  Role:'Marketing',
+  Image:'https://st4.depositphotos.com/1001992/21109/i/600/depositphotos_211096346-stock-photo-confident-man-white-shirt-posing.jpg',
+  Message:"There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable."
 
 
 }
@@ -56,8 +60,13 @@ const App=()=> {
   return (
     <div className="container">
     <div className="forms">
-    <h3>{people[curindex].Name}</h3>
+    
     <img src={people[curindex].Image} />
+    <h3 style={{letterSpacing:'0.2rem',fontWeight:'bold'}}>{people[curindex].Name}</h3>
+    <h4 style={{letterSpacing:'0.1rem',fontWeight:'bold',color:'#d35400'}}>{people[curindex].Role}</h4>
+    <p style={{width:'50%',textAlign:'center',marginLeft:'25%',letterSpacing:'0.02rem'}}>
+     {people[curindex].Message}
+    </p>
     <br/>
       <div className="buttons">
     <button className="btn" onClick={moveback}> <FontAwesomeIcon icon={faChevronLeft} /></button>
