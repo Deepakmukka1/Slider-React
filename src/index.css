@@ -37,7 +37,9 @@ img {
   min-height: 200px;
   height: 200px;
   border-radius: 20px;
-  box-shadow: violet;
+  -webkit-box-shadow: 0 0px 5px 5px#E58000;
+  -moz-box-shadow: 0 0px 5px 5px #e58000;
+  box-shadow: 5px 5px 5px 7px #e58000;
 }
 
 img.resize {
