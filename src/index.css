@@ -1,13 +1,54 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.container {
+  width: 95vw;
+  margin: 0 auto;
+  text-align: center;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+html {
+  background-color: #f1e1c9;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+.btn {
+  background-color: #ea7d21;
+  padding: 0.5rem 0.6rem;
+  color: white;
+  font-weight: 540;
+  letter-spacing: 0.15rem;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  cursor: pointer;
+  margin: 0 5px 0 5px;
+}
+.buttons {
+  display: inline;
+  margin-top: 10px;
+}
+.btn:hover {
+  background-color: #ac5e1f;
+  transition: 0.6s ease-in-out;
+}
+img {
+  min-height: 200px;
+  height: 200px;
+  border-radius: 20px;
+  box-shadow: violet;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+img.resize {
+  width: calc(100% / 4);
+}
+.forms {
+  color: #2c3e50;
+  position: fixed;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fcc067;
+  border: none;
+  border-radius: 20px;
+  width: 50vw;
+  padding: 2%;
 }
